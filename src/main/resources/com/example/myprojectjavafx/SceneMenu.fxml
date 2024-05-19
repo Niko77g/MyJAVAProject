@@ -1,16 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.myprojectjavafx.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myprojectjavafx.Scene2">
+   <children>
+      <Label layoutY="52.0" prefHeight="17.0" prefWidth="600.0" text="Inventárny Systém">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="186.0" layoutY="112.0" mnemonicParsing="false" onAction="#SwitchScene1" text="Add new product">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="186.0" layoutY="174.0" mnemonicParsing="false" onAction="#SwitchScene2" prefHeight="51.0" prefWidth="216.0" text="Edit product">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="186.0" layoutY="235.0" mnemonicParsing="false" onAction="#SwitchScene3" prefHeight="51.0" prefWidth="216.0" text="Remove product">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="186.0" layoutY="295.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="216.0" text="Search product">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
