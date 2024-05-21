@@ -27,7 +27,7 @@
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="186.0" layoutY="295.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="216.0" text="Search product">
+      <Button layoutX="186.0" layoutY="295.0" mnemonicParsing="false" onAction="#SwitchScene4" prefHeight="51.0" prefWidth="216.0" text="Search product">
          <font>
             <Font size="24.0" />
          </font>

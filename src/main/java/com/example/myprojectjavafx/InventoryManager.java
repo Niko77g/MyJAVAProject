@@ -1,5 +1,6 @@
 package com.example.myprojectjavafx;
 
+import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -38,7 +39,39 @@ public class InventoryManager {
             return false;
         }
     }
+    public boolean removeProduct(String productID){
 
+        if(products.containsKey(productID)){
+            products.remove(productID);
+            return true;
+        } else {
+            return false;
+        }
+    }
+    public String searchProduct(String productID){
+        Product product = products.get(productID);
+        if(product != null){
+           String dataofproduct = "Product ID: " + productID + "\nProduct Name: " + product.nameofproduct + "\nProduct of piece: " + product.numberofpiece + "\nProduct Price: " + product.price;
+           return dataofproduct;
+        } else {
+            return "Product ID " + productID + "not find";
+        }
+    }
+    public void Writetofile(File file){
+        BufferedWriter bf = null;
+        try {
+            bf = new BufferedWriter(new FileWriter(file));
+            for (Map.Entry<String, Product> entry : products.entrySet()) {
+                bf.write(entry.getKey() + ":" + entry.getValue().getNameOfProduct() + ","
+                        + entry.getValue().getNumberOfPiece() + ", " + entry.getValue().getPrice()
+                );
+                bf.newLine();
+            }
+                bf.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
     public void printProducts() {
         System.out.println("Printing all products:");
         if (products.isEmpty()) {

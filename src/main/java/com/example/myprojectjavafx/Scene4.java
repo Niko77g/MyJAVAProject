@@ -21,11 +21,25 @@ public class Scene4 {
     @FXML
     private Label myLabel1;
     @FXML
-    private TextField myTextFlied1;
+    private TextField myTextField1;
 
     private InventoryManager inventoryManager = InventoryManager.getInstance();
     public void SubmitRemove(ActionEvent event)throws IOException {
+        String productID = (myTextField1.getText());
+        try {
+            int id = Integer.parseInt(productID);
+            myTextField1.setText("");
 
+        boolean isRemove = inventoryManager.removeProduct(productID);
+        if(isRemove){
+            myLabel1.setText("Remove is successfull");
+            myTextField1.setText("");
+        } else {
+            myLabel1.setText("Remove is not succesfull");
+        }
+       } catch (NumberFormatException e){
+            myLabel1.setText("Please enter number!");
+        }
     }
     public void SwitchSceneMenu(javafx.event.ActionEvent event) throws  IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("SceneMenu.fxml"));

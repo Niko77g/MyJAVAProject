@@ -9,7 +9,7 @@
    <children>
       <Label layoutY="37.0" prefHeight="17.0" prefWidth="600.0" text="Remove product" />
       <Label fx:id="myLabel1" layoutX="14.0" layoutY="81.0" text="Enter the product ID which you want to remove:" />
-      <TextField fx:id="myTextFlied1" layoutX="14.0" layoutY="106.0" prefHeight="25.0" prefWidth="254.0" />
+      <TextField fx:id="myTextField1" layoutX="14.0" layoutY="106.0" prefHeight="25.0" prefWidth="254.0" />
       <Button layoutX="22.0" layoutY="153.0" mnemonicParsing="false" onAction="#SubmitRemove" text="Remove product" />
       <Button layoutX="30.0" layoutY="219.0" mnemonicParsing="false" onAction="#SwitchSceneMenu" text="Back to menu" />
    </children>
