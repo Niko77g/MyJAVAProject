@@ -7,7 +7,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myprojectjavafx.Scene2">
    <children>
-      <Label layoutY="52.0" prefHeight="17.0" prefWidth="600.0" text="Inventárny Systém">
+      <Label fx:id="nameLabel1" layoutY="52.0" prefHeight="17.0" prefWidth="600.0" text="Inventory System">
          <font>
             <Font size="20.0" />
          </font>

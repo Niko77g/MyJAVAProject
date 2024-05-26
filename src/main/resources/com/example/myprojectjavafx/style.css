@@ -1,0 +1,12 @@
+.label {
+-fx-font-size: 30;
+ -fx-alignment: center;
+}
+#nameLabel1 {
+ -fx-font-size: 30;
+ -fx-alignment: center;
+}
+#nameLabel3 {
+ -fx-font-size: 30;
+ -fx-alignment: center;
+}

@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -18,6 +19,8 @@ public class Scene3 {
     private Stage stage;
     private Scene scene;
 
+    @FXML
+    private Label nameLabel3;
     @FXML
     private Label myLabel1;
     @FXML
@@ -34,6 +37,10 @@ public class Scene3 {
     private Label myLabel4;
     @FXML
     private TextField myTextFlied4;
+    @FXML
+    private RadioButton rButton1;
+    @FXML
+    private RadioButton rButton2;
 
     String new_nameofproduct;
     int new_numberofpiece;
@@ -49,11 +56,15 @@ public class Scene3 {
             myTextField3.setText("");
             myTextFlied4.setText("");
             myLabel2.setText("");
-
             new_nameofproduct = (myTextField2.getText());
+            if (rButton1.isSelected()) {
+                new_nameofproduct = new_nameofproduct.toUpperCase();
+            } else if (rButton2.isSelected()) {
+                new_nameofproduct = new_nameofproduct.toLowerCase();
+            }
             boolean isUpdated = inventoryManager.updateProduct(productID, new_nameofproduct, new_numberofpiece, new_price);
             if (isUpdated) {
-                myLabel1.setText("Update was successfull");
+                myLabel1.setText("Update was successful");
                 inventoryManager.printProducts();
                 System.out.println("Success");
                 myTextField1.setText("");
@@ -61,12 +72,11 @@ public class Scene3 {
                 myTextField3.setText("");
                 myTextFlied4.setText("");
             } else {
-                myLabel1.setText("Update is not successfull");
+                myLabel1.setText("Update is not successful(No valid ID)");
                 inventoryManager.printProducts();
-                System.out.println("Nepodarilo sa");
             }
         }catch (NumberFormatException e){
-            myLabel2.setText("Please enter number!");
+            myLabel2.setText("Please enter the number!");
         }
     }
     public void SwitchSceneMenu(ActionEvent event) throws  IOException {

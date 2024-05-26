@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -23,6 +24,10 @@ public class Scene2 {
     private Scene scene;
 
     @FXML
+    private Label nameLabel1;
+    @FXML
+    private Label nameLabel2;
+    @FXML
     private Label myLabel1;
     @FXML
     private TextField myTextField1;
@@ -36,8 +41,13 @@ public class Scene2 {
     private TextField myTextField3;
     @FXML
     private  Label MyLabel4;
+    @FXML
+    private RadioButton rButton1;
+    @FXML
+    private RadioButton rButton2;
     private InventoryManager inventoryManager = InventoryManager.getInstance();
-    String nameofproduct;
+    private String productID;
+    String nameofproduct = "";
     int numberofpiece;
     double price;
 
@@ -48,6 +58,11 @@ public class Scene2 {
             return;
         } else {
             myLabel1.setText("Name of the product: ");
+        }
+        if (rButton1.isSelected()) {
+            nameofproduct = nameofproduct.toUpperCase();
+        } else if (rButton2.isSelected()) {
+            nameofproduct = nameofproduct.toLowerCase();
         }
         try {
             numberofpiece = Integer.parseInt(myTextField2.getText());
@@ -66,20 +81,7 @@ public class Scene2 {
         }
 
         String productID = inventoryManager.addProduct(nameofproduct,numberofpiece,price);
-        try {
-            FileWriter data = new FileWriter("datainventory.txt",true);
-            data.append("\n ID product: "+ productID + "\n Product name: " + nameofproduct + "\n Product piece: "+ numberofpiece +"\n Product price: " + price + "\n ----------------------------------------");
-            data.close();
-            MyLabel4.setText("Sent successfully");
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        /*
-        System.out.println(nameofproduct);
-        System.out.println(numberofpiece);
-        System.out.println(price);
 
-         */
     }
 
     public  void SwitchScene1(ActionEvent event) throws IOException {

@@ -6,7 +6,7 @@ import java.util.Map;
 
 
 public class InventoryManager {
-    private Map<String, Product> products;
+    private final Map<String, Product> products;
     private static InventoryManager instance;
     private long myIDproduct;
 
@@ -22,9 +22,12 @@ public class InventoryManager {
 
     public String addProduct(String nameofproduct, int numberofpiece, double price) {
         String productID = String.format("%04d", myIDproduct++);
-        Product product = new Product(productID, nameofproduct, numberofpiece, price);
-        products.put(productID, product);
-        System.out.println("Added product: " + productID);
+        new Thread(() -> {
+            Product product = new Product(productID, nameofproduct, numberofpiece, price);
+            products.put(productID, product);
+            System.out.println("Added product: " + productID);
+            System.out.println(nameofproduct);
+        }).start();
         return productID;
     }
 
@@ -51,27 +54,31 @@ public class InventoryManager {
     public String searchProduct(String productID){
         Product product = products.get(productID);
         if(product != null){
+            System.out.println("V searchProduct");
            String dataofproduct = "Product ID: " + productID + "\nProduct Name: " + product.nameofproduct + "\nProduct of piece: " + product.numberofpiece + "\nProduct Price: " + product.price;
            return dataofproduct;
         } else {
-            return "Product ID " + productID + "not find";
+            return "Product ID " + productID + " not find";
         }
     }
     public void Writetofile(File file){
-        BufferedWriter bf = null;
-        try {
-            bf = new BufferedWriter(new FileWriter(file));
-            for (Map.Entry<String, Product> entry : products.entrySet()) {
-                bf.write(entry.getKey() + ":" + entry.getValue().getNameOfProduct() + ","
-                        + entry.getValue().getNumberOfPiece() + ", " + entry.getValue().getPrice()
-                );
-                bf.newLine();
-            }
+            BufferedWriter bf = null;
+            try {
+                bf = new BufferedWriter(new FileWriter(file));
+                for (Map.Entry<String, Product> entry : products.entrySet()) {
+                    bf.write("Product ID: " + entry.getKey() + " Product name: " + entry.getValue().getNameOfProduct() + " Product of piece: "
+                            + entry.getValue().getNumberOfPiece() + " Product price: " + entry.getValue().getPrice()
+                    );
+                    bf.newLine();
+                }
                 bf.flush();
-        } catch (IOException e) {
-            e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+
         }
+
     }
+
     public void printProducts() {
         System.out.println("Printing all products:");
         if (products.isEmpty()) {

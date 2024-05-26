@@ -32,10 +32,10 @@ public class Scene4 {
 
         boolean isRemove = inventoryManager.removeProduct(productID);
         if(isRemove){
-            myLabel1.setText("Remove is successfull");
+            myLabel1.setText("Remove was successful");
             myTextField1.setText("");
         } else {
-            myLabel1.setText("Remove is not succesfull");
+            myLabel1.setText("Remove is not successful");
         }
        } catch (NumberFormatException e){
             myLabel1.setText("Please enter number!");

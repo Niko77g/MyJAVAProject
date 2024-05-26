@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.stage.FileChooser;
@@ -33,7 +34,7 @@ public class Scene5 {
         String dataofproduct = inventoryManager.searchProduct(productID);
         myLabel3.setText(dataofproduct);
         myTextField.setText("");
-        myLabel2.setText("Product <ID>:");
+        myLabel2.setText(String.format("Product <%s>:", productID));
         }catch (NumberFormatException e){
             myLabel2.setText("You must enter number of ID!");
         }

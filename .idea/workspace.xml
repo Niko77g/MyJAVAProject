@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b50e89e-cefa-4e3a-b9db-a0c1fd5c3bce" name="Changes" comment="Start">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/myprojectjavafx/Scene5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/myprojectjavafx/Scene5.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/myprojectjavafx/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datainventory.txt" beforeDir="false" afterPath="$PROJECT_DIR$/datainventory.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/myprojectjavafx/InventoryManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/myprojectjavafx/InventoryManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/myprojectjavafx/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/myprojectjavafx/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/myprojectjavafx/Scene2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/myprojectjavafx/Scene2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/myprojectjavafx/Scene3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/myprojectjavafx/Scene3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/myprojectjavafx/Scene4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/myprojectjavafx/Scene4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/myprojectjavafx/Scene5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/myprojectjavafx/Scene5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/myprojectjavafx/Scene2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/myprojectjavafx/Scene2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/myprojectjavafx/Scene3.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/myprojectjavafx/Scene3.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/myprojectjavafx/Scene4.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/myprojectjavafx/Scene4.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/myprojectjavafx/Scene5.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/myprojectjavafx/Scene5.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/myprojectjavafx/SceneMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/myprojectjavafx/SceneMenu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,19 +54,61 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloApplication.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Docker.Dockerfile.executor": "Run",
+    "Docker.src/Dockerfile.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.myprojectjavafx" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nicoh\IdeaProjects\MyProjectJAVAFX" />
+      <recent name="C:\Users\nicoh\IdeaProjects\MyProjectJAVAFX\src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="inventory-system:1.0" />
+          <option name="containerName" value="my-container1" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="inventory-system:1.0" />
+          <option name="containerName" value="inventorycontainer1" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.Dockerfile" />
+        <item itemvalue="Docker.Dockerfile" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
