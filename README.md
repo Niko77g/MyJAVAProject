@@ -23,11 +23,10 @@ The program can be cloned via GitHub please follow this procedure:
   <pre lang="terminal" class="notranslate"><code>Windows command: --module-path "\path\to\javafx-sdk-22.0.1\lib" --add-modules javafx.controls,javafx.fxml</code></pre>
 </div>
   <strong>Attention:</strong> It is necessary to modify the command to the location where the javafx sdk is located
-6. 
  
 # USAGE 
 <div>Lists of functions: </div>
-<li><strong>Add function:</strong></li>
-<li><strong>Update function:</strong></li>
-<li><strong>Remove function:</strong></li>
-<li><strong>Search function:</strong></li>
+<li><strong>Add function:</strong> Includes the ability to add a title, number of pieces, price and also the ability to select a default title size.</li>
+<li><strong>Update function:</strong> On the basis of the created ID it is possible to update items such as name, number of pieces, price and default size of the name.</li>
+<li><strong>Remove function:</strong> After entering the correct product ID it is possible to remove the product from the HashMap.</li>
+<li><strong>Search function:</strong> Ability to search for a product based on ID with the option to download a .txt file with the entire HashMap database</li>
