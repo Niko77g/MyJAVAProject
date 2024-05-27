@@ -6,4 +6,4 @@ The program can be cloned via GitHub please follow this procedure:
    <command> <foto>
 3.After cloning my GitHub project, you need to install the JDK version openjdk-22, which can be installed directly in the Intellij development environment.
 3.To run a JavaFX application you need to have JavaFX SDK version 21 installed
-  https://openjfx.io/openjfx-docs/
+  https://gluonhq.com/products/javafx/
