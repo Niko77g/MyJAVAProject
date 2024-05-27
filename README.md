@@ -15,7 +15,8 @@ The program can be cloned via GitHub please follow this procedure:
 <div>3.To run a JavaFX application you need to have JavaFX SDK version 21 installed </div>
   https://gluonhq.com/products/javafx/
 <div>4.In intellj Idea go to File/ Project Structure/Libraries where you need to use the + button to add the extracted openjfx file and select the lib subor file and click apply button. </div>
-  <image>
+  <img width="371" alt="image" src="https://github.com/Niko77g/MyJAVAProject/assets/94113127/65cc4277-b754-49b8-b5ec-71a478cea892">
+
 <div>5.In order for JavaFX files to work properly, you also need to add VM options using the cmd command for windows: </div>
   https://openjfx.io/openjfx-docs/
   Windows command: --module-path "\path\to\javafx-sdk-22.0.1\lib" --add-modules javafx.controls,javafx.fxml
