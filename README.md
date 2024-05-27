@@ -13,7 +13,7 @@ The program can be cloned via GitHub please follow this procedure:
   https://openjfx.io/openjfx-docs/
   Windows command: --module-path "\path\to\javafx-sdk-22.0.1\lib" --add-modules javafx.controls,javafx.fxml
 6. 
-# USAGE
+<div> # USAGE </div>
 <div>Lists of functions: </div>
 <li><strong>Add function:</strong></li>
 <li><strong>Update function:</strong></li>
