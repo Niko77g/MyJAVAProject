@@ -15,7 +15,7 @@ The program can be cloned via GitHub please follow this procedure:
 6. 
 # USAGE
 Lists of functions: 
-<li><strong></strong></li>
-<li><strong></strong></li>
-<li><strong></strong></li>
-<li><strong></strong></li>
+<li><strong>Add function:</strong></li>
+<li><strong>Update function:</strong></li>
+<li><strong>Remove function:</strong></li>
+<li><strong>Search function:</strong></li>
