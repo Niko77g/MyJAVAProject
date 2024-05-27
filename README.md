@@ -19,6 +19,9 @@ The program can be cloned via GitHub please follow this procedure:
 
 <div>5.In order for JavaFX files to work properly, you also need to add VM options using the cmd command for windows: </div>
   https://openjfx.io/openjfx-docs/
+  <div class="snippet-clipboard-content notranslate position-relative overflow-auto" data-snippet-clipboard-copy-content="Windows command: --module-path "\path\to\javafx-sdk-22.0.1\lib" --add-modules javafx.controls,javafx.fxml">
+  <pre lang="terminal" class="notranslate"><code>Windows command: --module-path "\path\to\javafx-sdk-22.0.1\lib" --add-modules javafx.controls,javafx.fxml</code></pre>
+</div>
   Windows command: --module-path "\path\to\javafx-sdk-22.0.1\lib" --add-modules javafx.controls,javafx.fxml
   <strong>Attention:</strong> It is necessary to modify the command to the location where the javafx sdk is located
 6. 
