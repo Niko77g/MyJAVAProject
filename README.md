@@ -1,3 +1,9 @@
+# Inventory Manager
+Inventory Manager is a simple application created using Java and JAVAFX in which the created Scenes are used and also all the data is created and sent to the HashMap which is then worked with.
+
+# WHY?
+
+
 # Quick Start
 The program can be cloned via GitHub please follow this procedure:
 <div>1. For the best user experience, I recommend using the Intellj development environment.</div>
