@@ -14,7 +14,7 @@ The program can be cloned via GitHub please follow this procedure:
   Windows command: --module-path "\path\to\javafx-sdk-22.0.1\lib" --add-modules javafx.controls,javafx.fxml
 6. 
 # USAGE
-Lists of functions: 
+<div>Lists of functions: </div>
 <li><strong>Add function:</strong></li>
 <li><strong>Update function:</strong></li>
 <li><strong>Remove function:</strong></li>
