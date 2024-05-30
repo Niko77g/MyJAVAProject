@@ -2,7 +2,7 @@
 Inventory Manager is a simple application created using Java and JAVAFX, which uses created scenes that contain individual functions and product customization options such as deleting, updating, modifying String format and also the ability to download the entire HashMap database to the device in the form of a .txt file. 
 
 # WHY?
-
+The origin of InventoryManager was to learn how to program in JavaFX and to expand my Java programming skills by creating a simple GUI application suitable for small businesses that want to have an overview of what products they have to offer. 
 
 # Quick Start
 The program can be cloned via GitHub please follow this procedure:
