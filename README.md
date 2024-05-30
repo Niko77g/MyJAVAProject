@@ -32,14 +32,16 @@ The program can be cloned via GitHub please follow this procedure:
 <li><strong>Search function:</strong> Ability to search for a product based on ID with the option to download a .txt file with the entire HashMap database</li>
 
 # PREVIEW
-
+<div>Main Menu:</div>
+<img width="450" alt="image" src="https://github.com/Niko77g/MyJAVAProject/assets/94113127/e7f6253f-efb2-437e-8143-c417888c1db5">
 <div>Add function:</div>
-![Screenshot 2024-05-30 143644](https://github.com/Niko77g/MyJAVAProject/assets/94113127/f5074ac9-385a-498d-b690-97e2f3748da2)
+<img width="448" alt="image" src="https://github.com/Niko77g/MyJAVAProject/assets/94113127/7df49ea0-606d-45ee-8315-71381ce393ff">
 <div>Edit function:</div>
-![Screenshot 2024-05-30 143644](https://github.com/Niko77g/MyJAVAProject/assets/94113127/42954385-9849-41c0-b6b4-744f2980359b)
+<img width="451" alt="image" src="https://github.com/Niko77g/MyJAVAProject/assets/94113127/578ea1dd-c49c-444e-95f8-14fce31e4720">
 <div>Remove function:</div>
-![Screenshot 2024-05-30 143721](https://github.com/Niko77g/MyJAVAProject/assets/94113127/009cd3f8-3633-4bf7-806d-15afbbc49536)
+<img width="451" alt="image" src="https://github.com/Niko77g/MyJAVAProject/assets/94113127/51de1a33-b5d6-4aff-bd07-0be8a25e25da">
 <div>Search function:</div>
-![Screenshot 2024-05-30 143738](https://github.com/Niko77g/MyJAVAProject/assets/94113127/e6152016-f806-4873-aabb-3b95d62b8cf6)
+<img width="453" alt="image" src="https://github.com/Niko77g/MyJAVAProject/assets/94113127/d8e99663-22a3-4fdb-8115-d0ec468a20c5">
+
 
 
