@@ -49,13 +49,31 @@ public class Scene5 {
         }
 
     }
-    public void SwitchSceneMenu(javafx.event.ActionEvent event) throws IOException{
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("SceneMenu.fxml"));
+
+    public  void SwitchScene1(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Scene2.fxml"));
         Parent root = fxmlLoader.load();
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
+    public void SwitchScene2(ActionEvent event)throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Scene3.fxml"));
+        Parent root = fxmlLoader.load();
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    public void SwitchScene3(ActionEvent event) throws  IOException{
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Scene4.fxml"));
+        Parent root = fxmlLoader.load();
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
 }
 

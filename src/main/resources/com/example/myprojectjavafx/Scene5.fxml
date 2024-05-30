@@ -16,30 +16,45 @@
          <cursor>
             <Cursor fx:constant="MOVE" />
          </cursor></Label>
-      <Label fx:id="myLabel1" layoutX="14.0" layoutY="80.0" text="Enter the ID of product for search:">
+      <Label fx:id="myLabel1" layoutX="177.0" layoutY="77.0" text="Enter the ID of product for search:">
          <font>
             <Font size="15.0" />
          </font></Label>
-      <TextField fx:id="myTextField" layoutX="14.0" layoutY="108.0" prefHeight="27.0" prefWidth="217.0">
+      <TextField fx:id="myTextField" layoutX="177.0" layoutY="98.0" prefHeight="27.0" prefWidth="217.0">
          <font>
             <Font size="13.0" />
          </font></TextField>
-      <Button layoutX="62.0" layoutY="151.0" mnemonicParsing="false" onAction="#SubmitSearch" text="Search product">
+      <Button layoutX="219.0" layoutY="141.0" mnemonicParsing="false" onAction="#SubmitSearch" text="Search product">
          <font>
             <Font size="15.0" />
          </font></Button>
-      <Button layoutX="417.0" layoutY="334.0" mnemonicParsing="false" onAction="#SwitchSceneMenu" prefHeight="32.0" prefWidth="121.0" text="Back to menu">
-         <font>
-            <Font size="15.0" />
-         </font></Button>
-      <Label fx:id="myLabel2" layoutX="370.0" layoutY="80.0" text="Product &lt;ID&gt;:">
+      <Label fx:id="myLabel2" layoutX="403.0" layoutY="183.0" text="Product &lt;ID&gt;:">
          <font>
             <Font size="15.0" />
          </font></Label>
-      <Label fx:id="myLabel3" layoutX="362.0" layoutY="108.0" prefHeight="103.0" prefWidth="192.0" />
-      <Button layoutX="61.0" layoutY="334.0" mnemonicParsing="false" onAction="#SubmitDownloadFile" prefHeight="32.0" prefWidth="121.0" text="Download File">
+      <Label fx:id="myLabel3" layoutX="382.0" layoutY="208.0" prefHeight="103.0" prefWidth="192.0" />
+      <Button layoutX="177.0" layoutY="334.0" mnemonicParsing="false" onAction="#SubmitDownloadFile" prefHeight="32.0" prefWidth="121.0" text="Download File">
          <font>
             <Font size="15.0" />
          </font></Button>
+      <AnchorPane layoutX="10.0" layoutY="33.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: gainsboro;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="443.33333333333337" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="5.333333333333333" layoutY="70.0" mnemonicParsing="false" onAction="#SwitchScene1" prefHeight="51.0" prefWidth="145.0" text="Add new product" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="7.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="5.0" layoutY="209.0" mnemonicParsing="false" onAction="#SwitchScene3" prefHeight="51.0" prefWidth="151.0" text="Remove product" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="6.333333333333314">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="5.0" layoutY="138.0" mnemonicParsing="false" onAction="#SwitchScene2" prefHeight="51.0" prefWidth="145.0" text="Edit product" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="6.333333333333314">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

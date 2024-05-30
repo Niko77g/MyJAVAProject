@@ -6,23 +6,23 @@ import java.util.Map;
 
 
 public class InventoryManager {
-    private final Map<String, Product> products;
-    private static InventoryManager instance;
+    private final Map<String, Product> products; // Vytvorenie HashMapy s nazvom products
+    private static InventoryManager instance;  // staticka instancia triedy
     private long myIDproduct;
 
     public InventoryManager() {
-        products = new HashMap<>();
+        products = new HashMap<>(); // inicializacia mapy pre produkty
     }
-    public static InventoryManager getInstance() {
+    public static InventoryManager getInstance() {  //ziskanie jedinecnej instancie
         if (instance == null) {
             instance = new InventoryManager();
         }
         return instance;
     }
 
-    public String addProduct(String nameofproduct, int numberofpiece, double price) {
+    public String addProduct(String nameofproduct, int numberofpiece, double price) {  //Parametre metody
         String productID = String.format("%04d", myIDproduct++);
-        new Thread(() -> {
+        new Thread(() -> {  // Vytvorenie noveho vlakna a spustenie bloku kodu
             Product product = new Product(productID, nameofproduct, numberofpiece, price);
             products.put(productID, product);
             System.out.println("Added product: " + productID);
@@ -54,7 +54,7 @@ public class InventoryManager {
     public String searchProduct(String productID){
         Product product = products.get(productID);
         if(product != null){
-            System.out.println("V searchProduct");
+            System.out.println("V searchProduct"); // pomocny print
            String dataofproduct = "Product ID: " + productID + "\nProduct Name: " + product.nameofproduct + "\nProduct of piece: " + product.numberofpiece + "\nProduct Price: " + product.price;
            return dataofproduct;
         } else {
@@ -64,14 +64,14 @@ public class InventoryManager {
     public void Writetofile(File file){
             BufferedWriter bf = null;
             try {
-                bf = new BufferedWriter(new FileWriter(file));
-                for (Map.Entry<String, Product> entry : products.entrySet()) {
+                bf = new BufferedWriter(new FileWriter(file)); // Vytvorenie BufferedWriter pre zapis do suboru
+                for (Map.Entry<String, Product> entry : products.entrySet()) {  // Prechadzanie cez vsetky prvky v product HashMape
                     bf.write("Product ID: " + entry.getKey() + " Product name: " + entry.getValue().getNameOfProduct() + " Product of piece: "
                             + entry.getValue().getNumberOfPiece() + " Product price: " + entry.getValue().getPrice()
                     );
                     bf.newLine();
                 }
-                bf.flush();
+                bf.flush(); // Vyprazdnenie bufferu a zapis do suboru
             } catch (IOException e) {
                 e.printStackTrace();
 
@@ -100,35 +100,42 @@ public class InventoryManager {
         private String nameofproduct;
         private int numberofpiece;
         private double price;
-
+        // Konstruktor Product
         public Product(String id, String nameofproduct, int numberofpiece, double price) {
             this.id = id;
             this.nameofproduct = nameofproduct;
             this.numberofpiece = numberofpiece;
             this.price = price;
         }
-
+        //Getter metoda sluzi na ziskavanie nazvu
+        //Setter metoda sluzi na nastavovanie nazvu
         public String getNameOfProduct() {
+
             return nameofproduct;
         }
 
         public void setNameofproduct(String new_nameofproduct) {
+
             this.nameofproduct = new_nameofproduct;
         }
 
         public int getNumberOfPiece() {
+
             return numberofpiece;
         }
 
         public void setNumberofpiece(int new_numberofpiece) {
+
             this.numberofpiece = new_numberofpiece;
         }
 
         public double getPrice() {
+
             return price;
         }
 
         public void setPrice(double newPrice) {
+
             this.price = newPrice;
         }
 

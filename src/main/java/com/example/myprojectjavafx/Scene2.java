@@ -117,14 +117,6 @@ public class Scene2 {
         stage.show();
     }
 
-    public void SwitchSceneMenu(ActionEvent event) throws  IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("SceneMenu.fxml"));
-        Parent root = fxmlLoader.load();
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-    }
 
 
 }
