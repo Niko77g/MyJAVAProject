@@ -1,5 +1,5 @@
 # Inventory Manager
-Inventory Manager is a simple application created using Java and JAVAFX in which the created Scenes are used and also all the data is created and sent to the HashMap which is then worked with.
+Inventory Manager is a simple application created using Java and JAVAFX, which uses created scenes that contain individual functions and product customization options such as deleting, updating, modifying String format and also the ability to download the entire HashMap database to the device in the form of a .txt file. 
 
 # WHY?
 
