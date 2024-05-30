@@ -23,10 +23,23 @@ The program can be cloned via GitHub please follow this procedure:
   <pre lang="terminal" class="notranslate"><code>Windows command: --module-path "\path\to\javafx-sdk-22.0.1\lib" --add-modules javafx.controls,javafx.fxml</code></pre>
 </div>
   <strong>Attention:</strong> It is necessary to modify the command to the location where the javafx sdk is located
- 
+
 # USAGE 
 <div>Lists of functions: </div>
 <li><strong>Add function:</strong> Includes the ability to add a title, number of pieces, price and also the ability to select a default title size.</li>
-<li><strong>Update function:</strong> On the basis of the created ID it is possible to update items such as name, number of pieces, price and default size of the name.</li>
+<li><strong>Edit function:</strong> On the basis of the created ID it is possible to update items such as name, number of pieces, price and default size of the name.</li>
 <li><strong>Remove function:</strong> After entering the correct product ID it is possible to remove the product from the HashMap.</li>
 <li><strong>Search function:</strong> Ability to search for a product based on ID with the option to download a .txt file with the entire HashMap database</li>
+
+# PREVIEW
+
+<div>Add function:</div>
+![Screenshot 2024-05-30 143644](https://github.com/Niko77g/MyJAVAProject/assets/94113127/f5074ac9-385a-498d-b690-97e2f3748da2)
+<div>Edit function:</div>
+![Screenshot 2024-05-30 143644](https://github.com/Niko77g/MyJAVAProject/assets/94113127/42954385-9849-41c0-b6b4-744f2980359b)
+<div>Remove function:</div>
+![Screenshot 2024-05-30 143721](https://github.com/Niko77g/MyJAVAProject/assets/94113127/009cd3f8-3633-4bf7-806d-15afbbc49536)
+<div>Search function:</div>
+![Screenshot 2024-05-30 143738](https://github.com/Niko77g/MyJAVAProject/assets/94113127/e6152016-f806-4873-aabb-3b95d62b8cf6)
+
+
